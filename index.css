@@ -93,6 +93,8 @@ button:hover {
   box-sizing: border-box;
   border-radius: 20px;
   color: #ffffff;
+  /* position: fixed;
+  bottom: 0; */
 }
 .footer a {
   margin: 3px;
