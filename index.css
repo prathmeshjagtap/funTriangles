@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+:root {
+  --primary-color: #60a5fa;
+  --off-white: white;
+  --hover: #e6e6e6;
+}
+html {
+  height: 100%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: var(--primary-color);
+  color: var(--off-white);
+  padding: 1rem;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav li {
+  padding: 1rem 1rem;
+  display: inline;
+}
+
+nav a {
+  color: var(--off-white);
+  text-decoration: none;
+  font-weight: 900;
+  font-size: large;
+}
+nav li a:hover {
+  color: #1e3a8a;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.main {
+  width: 100%;
+  max-width: 500px;
+  min-height: 300px;
+  margin: auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+input[type="number"] {
+  width: 80%;
+  margin: 10px;
+  height: 40px;
+}
+label {
+  font-weight: 700;
+}
+p {
+  font-weight: 900;
+}
+button {
+  cursor: pointer;
+  color: black;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: var(--primary-color);
+}
+
+button:hover {
+  background-color: var(--hover);
+  transition: all 0.2s;
+}
+.output {
+  font-weight: 900;
+  color: red;
+  margin-top: 20px;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  background-color: var(--primary-color);
+  box-sizing: border-box;
+  border-radius: 20px;
+  color: #ffffff;
+}
+.footer a {
+  margin: 3px;
+  padding: 3px;
+}
+.footer i {
+  color: #ffffff;
+}
+
+footer i:hover {
+  color: #1e3a8a;
+}
