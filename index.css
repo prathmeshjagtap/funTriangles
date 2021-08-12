@@ -5,9 +5,7 @@
   --off-white: white;
   --hover: #e6e6e6;
 }
-html {
-  height: 100%;
-}
+
 body {
   font-family: "Open Sans", sans-serif;
   background: linear-gradient(#0077b6, #90e0ef);
@@ -107,10 +105,30 @@ footer i:hover {
   color: #1e3a8a;
 }
 
+.backbtn {
+  display: none;
+}
 @media screen and (max-width: 600px) {
   input[type="number"] {
     width: 70%;
     margin: 10px;
     height: 40px;
+  }
+  nav {
+    display: none;
+  }
+  .backbtn {
+    padding-top: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: var(--off-white);
+    font-weight: 900;
+    font-size: large;
+  }
+  .backbtn:hover {
+    color: #1e3a8a;
+    font-weight: bold;
+    transition: 0.5s;
   }
 }
