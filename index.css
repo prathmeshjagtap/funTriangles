@@ -94,6 +94,7 @@ button:hover {
   box-sizing: border-box;
   border-radius: 20px;
   color: #ffffff;
+  margin-bottom: 5px;
 }
 .footer a {
   margin: 3px;
