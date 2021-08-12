@@ -13,15 +13,23 @@ function isTriangle() {
     Number(inputs[1].value) != "" &&
     Number(inputs[2].value) != ""
   ) {
-    const sumOfAngles = calculateSumOfAngles(
-      Number(inputs[0].value),
-      Number(inputs[1].value),
-      Number(inputs[2].value)
-    );
-    if (sumOfAngles === 180) {
-      output.innerText = "Yay, the angles form a Traingle";
+    if (
+      Number(inputs[0].value) > 0 &&
+      Number(inputs[1].value) > 0 &&
+      Number(inputs[2].value) > 0
+    ) {
+      const sumOfAngles = calculateSumOfAngles(
+        Number(inputs[0].value),
+        Number(inputs[1].value),
+        Number(inputs[2].value)
+      );
+      if (sumOfAngles === 180) {
+        output.innerText = "Yay, the angles form a Traingle";
+      } else {
+        output.innerText = "Oops!, the angles don't form a Traingle";
+      }
     } else {
-      output.innerText = "Oops!, the angles don't form a Traingle";
+      output.innerText = "Enter Positive values only (i.e values>0)";
     }
   } else {
     output.innerText = "Please Enter values of All angles";

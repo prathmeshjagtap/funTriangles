@@ -8,13 +8,17 @@ function calculateSquares(side1, side2) {
 }
 
 function calculateHypotenuse() {
-  if (Number(inputs[0].value) != "" && Number(inputs[1].value)) {
-    const sumOfSquares = calculateSquares(
-      Number(inputs[0].value),
-      Number(inputs[1].value)
-    );
-    const hypotenuse = Math.sqrt(sumOfSquares);
-    output.innerText = `The length of hypotenuse is ${hypotenuse}`;
+  if (Number(inputs[0].value) != "" && Number(inputs[1].value) != "") {
+    if (Number(inputs[0].value) > 0 && Number(inputs[1].value) > 0) {
+      const sumOfSquares = calculateSquares(
+        Number(inputs[0].value),
+        Number(inputs[1].value)
+      );
+      const hypotenuse = Math.sqrt(sumOfSquares);
+      output.innerText = `The length of hypotenuse is ${hypotenuse}`;
+    } else {
+      output.innerText = `Enter Numbers greater than 0`;
+    }
   } else {
     output.innerText = "Please Enter both sides";
   }
