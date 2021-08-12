@@ -10,12 +10,13 @@ html {
 }
 body {
   font-family: "Open Sans", sans-serif;
+  background: linear-gradient(#0077b6, #90e0ef);
+  background-attachment: fixed;
   margin: 0;
   padding: 0;
 }
 
 nav {
-  background-color: var(--primary-color);
   color: var(--off-white);
   padding: 1rem;
 }
@@ -47,6 +48,7 @@ nav li a:hover {
   padding: 2rem 1rem;
   text-align: center;
   box-sizing: border-box;
+  color: #ffffff;
 }
 
 input[type="number"] {
@@ -62,7 +64,7 @@ p {
 }
 button {
   cursor: pointer;
-  color: black;
+  color: white;
   outline: none;
   border: none;
   font-weight: 700;
@@ -89,12 +91,9 @@ button:hover {
 .footer {
   width: 100%;
   text-align: center;
-  background-color: var(--primary-color);
   box-sizing: border-box;
   border-radius: 20px;
   color: #ffffff;
-  /* position: fixed;
-  bottom: 0; */
 }
 .footer a {
   margin: 3px;
